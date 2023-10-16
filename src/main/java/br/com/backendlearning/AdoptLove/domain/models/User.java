@@ -6,8 +6,8 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Table(name = "adopt-love")
-@Entity(name = "User")
+@Table(name = "users")
+@Entity(name = "Users")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
@@ -22,4 +22,9 @@ public class User {
     private String email;
     private String password;
 
+    public User(String name, String email, String password) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
 }
