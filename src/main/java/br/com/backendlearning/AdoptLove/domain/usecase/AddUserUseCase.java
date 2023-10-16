@@ -1,7 +1,7 @@
 package br.com.backendlearning.AdoptLove.domain.usecase;
 
-import br.com.backendlearning.AdoptLove.domain.models.AddUser;
+import br.com.backendlearning.AdoptLove.domain.models.AddUserModel;
 
 public interface AddUserUseCase {
-    boolean createUser(AddUser model);
+    boolean createUser(AddUserModel model);
 }
